@@ -98,37 +98,37 @@
                 <tbody id="skills">
                     <tr>
                         <td>Java</td>
-                        <td class="horizontal_bar">4</td>
+                        <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
                         <td>4</td>
                     </tr>
                     <tr>
                         <td>Python</td>
-                        <td class="horizontal_bar">4</td>
+                        <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
                         <td>4</td>
                     </tr>
                     <tr>
                         <td>C</td>
-                        <td class="horizontal_bar">3</td>
+                        <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
                         <td>3</td>
                     </tr>
                     <tr>
                         <td>SQL</td>
-                        <td class="horizontal_bar">3</td>
+                        <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
                         <td>1</td>
                     </tr>
                     <tr>
                         <td>HTML</td>
-                        <td class="horizontal_bar">2</td>
+                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
                         <td>6</td>
                     </tr>
                     <tr>
                         <td>C++</td>
-                        <td class="horizontal_bar">2</td>
+                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
                         <td>2</td>
                     </tr>
                     <tr>
                         <td>MongoDB</td>
-                        <td class="horizontal_bar">2</td>
+                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
                         <td>1</td>
                     </tr>
                 </tbody>
@@ -185,8 +185,10 @@
                 <form>
                     <div><label>Name: <input type="text" placeholder="Name" required></label></div>
                     <div><label>Email: <input type="email" placeholder="Email" required></label></div>
-                    <div><label>Message: <input type="text" placeholder="Your Message" required></label>    
-                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>                    </div>
                     <button type="submit">Send</button>
                 </form>
             </fieldset>
