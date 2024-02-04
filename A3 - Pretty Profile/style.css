@@ -63,6 +63,26 @@ img {
     background-color: coral;
 }
 
+#skills tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#skills tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+.horizontal_bar {
+    width: 20px;
+}
+
+#experience tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#experience tr:nth-child(odd) {
+    background-color: yellow;
+}
+
 body {
     width: 1024px;
 }
@@ -70,6 +90,7 @@ body {
 #contact_form {
     border: 2px solid lightgray;
     padding: 5px;
+    width: 450px;
 }
 
 button:hover {
@@ -81,4 +102,9 @@ button:hover {
 hr {
     background-color: black;
     height: 3px;
+}
+
+.horizontal_bar {
+    height: 15px;
+    background-color: #4CAF50; 
 }
