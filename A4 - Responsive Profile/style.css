@@ -1,0 +1,130 @@
+html {
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center; color: #003366;
+    line-height: 1.25; 
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+body {
+    font-size: 14px;
+}
+
+li {
+    font-size: 20px;
+    color: #003366;
+}
+
+a {
+    color: blue;
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+    color: navy;
+}
+
+#personal_information {
+    font-size: 16px;
+    font-style: italic;
+}
+
+img {
+    width: 150px;
+    border: 3px;
+    color: solid coral;
+}
+
+#hobbies {
+    list-style: "\2713";
+}
+
+#education {
+    border: 1px solid lightgray;
+}
+
+#academic_achievements {
+    background-color: coral;
+}
+
+#skills tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#skills tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+.horizontal_bar {
+    width: 20px;
+}
+
+#experience tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#experience tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+body {
+    width: 1024px;
+}
+
+#contact_form {
+    border: 2px solid lightgray;
+    padding: 5px;
+    width: 450px;
+}
+
+button:hover {
+    background-color: coral;
+    color: white;
+    filter: brightness(95%);
+}
+
+hr {
+    background-color: black;
+    height: 3px;
+}
+
+.horizontal_bar {
+    height: 15px;
+    background-color: #4CAF50; 
+}
+
+#github::before {
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png') right/cover no-repeat;
+    margin-right: 10px; 
+    float: right / cover;
+}
+
+#linkedin::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473') right / cover no-repeat;
+    margin-right: 10px;
+    float: right / cover; 
+}

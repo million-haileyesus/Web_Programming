@@ -1,0 +1,198 @@
+<!--
+    Every file submitted in this course needs to be documented,
+    points will be designated towards documentation, don't loss
+    points for not documenting your work.  Provide general 
+    documentation about you, the course and assignment
+    
+    Autor: Million Haileyesus
+    School: Rowan University
+    Course: Web Programming CS04305
+    Assignment: A2 - HTML Personal Profile
+    Due Date: 01/31/2024
+    Instructor: Professor Marquise Pullen
+
+    Description: This assignment is designed to put together 
+		 a personal profile worth beautifying next 
+		 week using css.
+
+    Honor Pledge: I pledge that this work is entirely my own
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Profile</title>
+</head>
+<body>
+    <h1>Million Haileyesus Personal Profile</h1>
+    <ol>
+        <li>
+            <h2>Introduction:</h2>
+                <p>My name is <span>Million Seyoum Haileyesus</span>, I am a senior Computer Science major and Mathematics.<br/>
+                    I sit at the front row section of your class.
+                </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScxUfuorw9xTrTEXKGnjAOel4KApT1ZSMtw&usqp=CAU">
+        </li>
+
+        <hr>
+
+        <li>
+            <h2>Personal Information:</h2>
+                <p id="personal_information">I was born in Feburary 12, 2001 in Mekelle, Ethiopia. I have lived at my birthplace for 12 years<br/>
+                before moving to the captial and came to the United States two and a half years ago.
+                </p>
+            <h3>My Hobbies and Interests:</h3>
+            <ol id="hobbies">
+                <li>Programming in neovim</li>
+                <li>Playing soccer</li>
+                <li>Watching movies</li>
+            </ol>
+        </li>
+
+        <hr>
+
+        <li>
+            <h2>Educational Background:</h2>
+            <table id="education">
+                <caption>Education</caption>
+                <thead>
+                    <th>School Level</th>
+                    <th>School name</th>
+                    <th>Attended Year</th>
+                    <th id="academic_achievements">Academic Achievements</th>
+                    <th>Degree Obtained</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>High School</td>
+                        <td>Future Talent Academy</td>
+                        <td>2015 - 2019</td>
+                        <td id="academic_achievements">Survived</td>
+                        <td>High School Diploma</td>
+                    </tr>
+                    <tr>
+                        <td>Undergraduate</td>
+                        <td>Rowan University</td>
+                        <td>2020 - 2024</td>
+                        <td id="academic_achievements">Published a poster at a conference</td>
+                        <td>Hopefully will get my $100,000 degree paper</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+
+        <hr>
+
+        <li>
+            <h2>Skills and Experience:</h2>
+            <table border="2">
+                <caption>Skills</caption>
+                <thead>
+                    <th>Programming Language</th>
+                    <th>Level of Proficiency (out of 5)</th>
+                    <th>Years of Experience</th>
+                </thead>
+                <tbody id="skills">
+                    <tr>
+                        <td>Java</td>
+                        <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>MongoDB</td>
+                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="2">
+                <caption>Experience</caption>
+                <thead>
+                    <th>Company/Organization</th>
+                    <th>Programming Languages Used</th>
+                    <th>Tenure (months)</th>
+                    <th>Job Title</th>
+                </thead>
+                <tbody id="experience">
+                    <tr>
+                        <td>Bristol Myers Squibb</td>
+                        <td>Python</td>
+                        <td>15</td>
+                        <td>Web Scraping researcher and Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Rowan University</td>
+                        <td>Python</td>
+                        <td>6</td>
+                        <td>Search Algorithms Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Rowan University (Software Engineering Course)</td>
+                        <td>Python/JavaScript/HTML/CSS</td>
+                        <td>6</td>
+                        <td>Backend developer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+
+        <hr>
+
+        <li>
+            <h2>Contact Information</h2>
+            <p>Name: Million Haileyesus</p>
+            <p>Email: hailey74@students.rowan.edu</p>
+            <p>Location: Rowan University</p>
+            <p>Social: <div><a id="github" href="https://github.com/million-haileyesus" target="_blank">Github</a></div>
+                       <div><a id="linkedin" href="https://www.linkedin.com/in/million-haileyesus" target="_blank">LinkedIn</a></div>
+            </p>
+        </li>
+
+        <hr>
+
+        <li>
+            <h2">Contact Form</h2>
+            <fieldset id="contact_form">
+                <legend>Contact Information</legend>
+                <form>
+                    <div><label>Name: <input type="text" placeholder="Name" required></label></div>
+                    <div><label>Email: <input type="email" placeholder="Email" required></label></div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </fieldset>
+        </li>
+    </ol>    
+</body>
+</html>
