@@ -229,5 +229,17 @@ hr {
     background: rgb(119, 137, 138);
     border-radius: 10px;
     display:flex;
-    margin-left: calc(16.66667% - 1.5rem);
+    width: auto;
+}
+
+#contact_info {
+    margin: 0 20% 0 0;
+}
+
+#form {
+    margin: 0 0 0 20%;
+}
+
+#copyright {
+    text-align: end;
 }
