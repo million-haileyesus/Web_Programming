@@ -65,24 +65,40 @@ img {
     background-color: coral;
 }
 
-#skills tr:nth-child(even) {
-    background-color: #ffffff;
+table {
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-#skills tr:nth-child(odd) {
-    background-color: yellow;
+table thead tr {
+    background-color: #009879;
+    color:#ffffff;
+    text-align: left;
+    font-weight: bold;
 }
+
+table th, table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/* table tbody tr:nth-child(odd) {
+    background-color: rgb(128, 128, 128);
+} */
 
 .horizontal_bar {
     width: 20px;
-}
-
-#experience tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-#experience tr:nth-child(odd) {
-    background-color: yellow;
 }
 
 body {
@@ -96,9 +112,13 @@ body {
 }
 
 button:hover {
-    background-color: coral;
+    background-color: rgb(60, 125, 153);
     color: white;
     filter: brightness(95%);
+}
+
+#send {
+    text-align: center;
 }
 
 hr {
@@ -137,9 +157,11 @@ hr {
     display: flex;
     align-items: center;
     justify-content: right;
-    background-color: rgb(131, 185, 185);
+    /* background-color: rgb(131, 185, 185); */
+    background-color: grey;
     opacity: 0.7;
     position: fixed;
+    color: white;
 }
 
 #parent > .flex-container > #personal_profile {
@@ -187,7 +209,23 @@ hr {
     max-width: 600px;
     margin: auto;
     line-height: 1.5;
-    color: black;
+    color: rgb(42, 69, 86);
 }
+
+#name {
+    color: rgb(152, 152, 37);
+    font-size: 1.4em;
+}
+
+.content-container {
+    width: max-content;
+    height: fit-content;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 20px;
+}
+
+
 
 
