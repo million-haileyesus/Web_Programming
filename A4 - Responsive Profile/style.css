@@ -93,10 +93,6 @@ table tbody tr:nth-child(even) {
     background-color: #f3f3f3;
 }
 
-/* table tbody tr:nth-child(odd) {
-    background-color: rgb(128, 128, 128);
-} */
-
 .horizontal_bar {
     width: 20px;
 }
@@ -108,7 +104,7 @@ body {
 #contact_form {
     border: 2px solid lightgray;
     padding: 5px;
-    width: 450px;
+    width: 350px;
 }
 
 button:hover {
@@ -222,8 +218,17 @@ hr {
     height: fit-content;
     margin: auto;
     padding: 25px;
-    background: white;
-    border-radius: 20px;
+    background: rgb(234, 231, 226);
+    border-radius: 10px;
+}
+
+.contact-container {
+    width: max-content;
+    height: fit-content;
+    margin: auto;
+    padding: 25px;
+    background: rgb(185, 209, 210);
+    border-radius: 10px;
 }
 
 
