@@ -147,7 +147,6 @@ hr {
     float: right / cover; 
 }
 
-
 .flex-container {
     height: 70px;
     display: flex;
@@ -224,13 +223,11 @@ hr {
 
 .contact-container {
     width: max-content;
-    height: fit-content;
+    height: max-content;
     margin: auto;
     padding: 25px;
-    background: rgb(185, 209, 210);
+    background: rgb(119, 137, 138);
     border-radius: 10px;
+    display:flex;
+    margin-left: calc(16.66667% - 1.5rem);
 }
-
-
-
-
