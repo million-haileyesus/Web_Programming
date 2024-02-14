@@ -152,7 +152,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: right;
-    /* background-color: rgb(131, 185, 185); */
     background-color: grey;
     opacity: 0.7;
     position: fixed;
@@ -193,10 +192,15 @@ hr {
 }
 
 #intro {
-    background-image: url("pier-lake-hallstatt-austria.jpg");
+    background-image: url("1pier-lake-hallstatt-austria.jpg");
     color: white;
     padding: 50px;
     text-align: center;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    width: auto;
 }
 
 #intro p {
