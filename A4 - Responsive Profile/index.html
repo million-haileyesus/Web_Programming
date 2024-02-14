@@ -27,172 +27,214 @@
     <title>Personal Profile</title>
 </head>
 <body>
-    <h1>Million Haileyesus Personal Profile</h1>
-    <ol>
-        <li>
-            <h2>Introduction:</h2>
-                <p>My name is <span>Million Seyoum Haileyesus</span>, I am a senior Computer Science major and Mathematics.<br/>
-                    I sit at the front row section of your class.
-                </p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScxUfuorw9xTrTEXKGnjAOel4KApT1ZSMtw&usqp=CAU">
-        </li>
+    <div id="parent">
+        <div class="flex-container">
+            <span id="personal_profile">PERSONAL PROFILE</span>
+            <span onclick="scrollToSection('intro')">INTRODUCTION</span>
+            <span onclick="scrollToSection('personal_info')">ABOUT ME</span>
+            <span onclick="scrollToSection('h&i')">HOBBIES</span>
+            <span onclick="scrollToSection('edu_background')">BACKGROUND</span>
+            <span onclick="scrollToSection('skills&exper')">EXPERTISE</span>
+            <span onclick="scrollToSection('contact_info')">CONTACT</span>
+        </div>
+    </div>
+    
+    <div id="intro">
+        <h2>Introduction:</h2>
+        <p>Hello, I am <span>Million Seyoum Haileyesus</span>, I am a senior Computer Science major and Mathematics.<br/>
+            I sit at the front row section of your class.
+        </p>
+    </div>
 
-        <hr>
+    <hr>
+    
+    <div id="personal_info">
+        <h2>Personal Information:</h2>
+        <p id="personal_information">I was born in Feburary 12, 2001 in Mekelle, Ethiopia. I have lived at my birthplace for 12 years<br/>
+                    before moving to the captial and came to the United States two and a half years ago.
+        </p>
 
-        <li>
-            <h2>Personal Information:</h2>
-                <p id="personal_information">I was born in Feburary 12, 2001 in Mekelle, Ethiopia. I have lived at my birthplace for 12 years<br/>
-                before moving to the captial and came to the United States two and a half years ago.
-                </p>
-            <h3>My Hobbies and Interests:</h3>
-            <ol id="hobbies">
-                <li>Programming in neovim</li>
-                <li>Playing soccer</li>
-                <li>Watching movies</li>
-            </ol>
-        </li>
+        <h3 id="h&i">My Hobbies and Interests:</h3>
+        <ul id="hobbies">
+            <li>Programming in neovim</li>
+            <li>Playing soccer</li>
+            <li>Watching movies</li>
+        </ul>
+    </div>
 
-        <hr>
+    <hr>
 
-        <li>
-            <h2>Educational Background:</h2>
-            <table id="education">
-                <caption>Education</caption>
-                <thead>
-                    <th>School Level</th>
-                    <th>School name</th>
-                    <th>Attended Year</th>
-                    <th id="academic_achievements">Academic Achievements</th>
-                    <th>Degree Obtained</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>High School</td>
-                        <td>Future Talent Academy</td>
-                        <td>2015 - 2019</td>
-                        <td id="academic_achievements">Survived</td>
-                        <td>High School Diploma</td>
-                    </tr>
-                    <tr>
-                        <td>Undergraduate</td>
-                        <td>Rowan University</td>
-                        <td>2020 - 2024</td>
-                        <td id="academic_achievements">Published a poster at a conference</td>
-                        <td>Hopefully will get my $100,000 degree paper</td>
-                    </tr>
-                </tbody>
-            </table>
-        </li>
+    <div id="edu_background">
+        <h2>Educational Background:</h2>
+        <table id="education">
+            <caption>Education</caption>
+            <thead>
+                <th>School Level</th>
+                <th>School name</th>
+                <th>Attended Year</th>
+                <th id="academic_achievements">Academic Achievements</th>
+                <th>Degree Obtained</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>High School</td>
+                    <td>Future Talent Academy</td>
+                    <td>2015 - 2019</td>
+                    <td id="academic_achievements">Survived</td>
+                    <td>High School Diploma</td>
+                </tr>
+                <tr>
+                    <td>Undergraduate</td>
+                    <td>Rowan University</td>
+                    <td>2020 - 2024</td>
+                    <td id="academic_achievements">Published a poster at a conference</td>
+                    <td>Hopefully will get my $100,000 degree paper</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <hr>
+    <hr>
 
-        <li>
-            <h2>Skills and Experience:</h2>
-            <table border="2">
-                <caption>Skills</caption>
-                <thead>
-                    <th>Programming Language</th>
-                    <th>Level of Proficiency (out of 5)</th>
-                    <th>Years of Experience</th>
-                </thead>
-                <tbody id="skills">
-                    <tr>
-                        <td>Java</td>
-                        <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>MongoDB</td>
-                        <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
-                        <td>1</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table border="2">
-                <caption>Experience</caption>
-                <thead>
-                    <th>Company/Organization</th>
-                    <th>Programming Languages Used</th>
-                    <th>Tenure (months)</th>
-                    <th>Job Title</th>
-                </thead>
-                <tbody id="experience">
-                    <tr>
-                        <td>Bristol Myers Squibb</td>
-                        <td>Python</td>
-                        <td>15</td>
-                        <td>Web Scraping researcher and Software Developer</td>
-                    </tr>
-                    <tr>
-                        <td>Rowan University</td>
-                        <td>Python</td>
-                        <td>6</td>
-                        <td>Search Algorithms Developer</td>
-                    </tr>
-                    <tr>
-                        <td>Rowan University (Software Engineering Course)</td>
-                        <td>Python/JavaScript/HTML/CSS</td>
-                        <td>6</td>
-                        <td>Backend developer</td>
-                    </tr>
-                </tbody>
-            </table>
-        </li>
+    <div id="skills&exper">
+        <h2>Skills and Experience:</h2>
+        <table border="2">
+            <caption>Skills</caption>
+            <thead>
+                <th>Programming Language</th>
+                <th>Level of Proficiency (out of 5)</th>
+                <th>Years of Experience</th>
+            </thead>
+            <tbody id="skills">
+                <tr>
+                    <td>Java</td>
+                    <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>4<div class="horizontal_bar" style="width: 80%;"></div></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>3<div class="horizontal_bar" style="width: 60%;"></div></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>MongoDB</td>
+                    <td>2<div class="horizontal_bar" style="width: 40%;"></div></td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="2">
+            <caption>Experience</caption>
+            <thead>
+                <th>Company/Organization</th>
+                <th>Programming Languages Used</th>
+                <th>Tenure (months)</th>
+                <th>Job Title</th>
+            </thead>
+            <tbody id="experience">
+                <tr>
+                    <td>Bristol Myers Squibb</td>
+                    <td>Python</td>
+                    <td>15</td>
+                    <td>Web Scraping researcher and Software Developer</td>
+                </tr>
+                <tr>
+                    <td>Rowan University</td>
+                    <td>Python</td>
+                    <td>6</td>
+                    <td>Search Algorithms Developer</td>
+                </tr>
+                <tr>
+                    <td>Rowan University (Software Engineering Course)</td>
+                    <td>Python/JavaScript/HTML/CSS</td>
+                    <td>6</td>
+                    <td>Backend developer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <hr>
+    <hr>
 
-        <li>
-            <h2>Contact Information</h2>
-            <p>Name: Million Haileyesus</p>
-            <p>Email: hailey74@students.rowan.edu</p>
-            <p>Location: Rowan University</p>
-            <p>Social: <div><a id="github" href="https://github.com/million-haileyesus" target="_blank">Github</a></div>
-                       <div><a id="linkedin" href="https://www.linkedin.com/in/million-haileyesus" target="_blank">LinkedIn</a></div>
-            </p>
-        </li>
+    <div id="contact_info">
+        <h2>Contact Information</h2>
+        <p>Name: Million Haileyesus</p>
+        <p>Email: hailey74@students.rowan.edu</p>
+        <p>Location: Rowan University</p>
+        <p>Social: <div><a id="github" href="https://github.com/million-haileyesus" target="_blank">Github</a></div>
+                    <div><a id="linkedin" href="https://www.linkedin.com/in/million-haileyesus" target="_blank">LinkedIn</a></div>
+        </p>
+    </div>
 
-        <hr>
+    <hr>
 
-        <li>
-            <h2">Contact Form</h2>
-            <fieldset id="contact_form">
-                <legend>Contact Information</legend>
-                <form>
-                    <div><label>Name: <input type="text" placeholder="Name" required></label></div>
-                    <div><label>Email: <input type="email" placeholder="Email" required></label></div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    </div>                    </div>
-                    <button type="submit">Send</button>
-                </form>
-            </fieldset>
-        </li>
-    </ol>    
+    <div id="form">
+        <h2>Contact Form</h2>
+        <fieldset id="contact_form">
+            <legend>Contact Information</legend>
+            <form>
+                <div><label>Name: <input type="text" placeholder="Name" required></label></div>
+                <div><label>Email: <input type="email" placeholder="Email" required></label></div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>                    
+                <button type="submit">Send</button>
+            </form>
+        </fieldset>
+    </div>            
+
+    
+    <button class="go_to_top">
+        <img src="https://img.icons8.com/ios/100/circled-up-2.png" alt="circled-up-2"/>
+    </button>
+
+    <script>
+        const goToTop = document.querySelector('.go_to_top');
+        window.addEventListener('scroll', checkHeight);      
+        
+        function checkHeight() {
+            if(window.screenY < 100) {
+                goToTop.style.display = "flex"
+            }
+            else {
+                goToTop.style.display = "none"
+            }
+        }
+
+        goToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0, 
+                behavior: "smooth"
+            })
+        });
+
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
