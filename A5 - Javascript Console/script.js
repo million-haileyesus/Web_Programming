@@ -1,19 +1,16 @@
-function readData() {
-    const fs = require('fs'); 
-    const readline = require('readline'); 
-    
+const fs = require('fs'); 
+const { parse } = require("csv-parse");  
 
-    const file = readline.createInterface({ 
-        input: fs.createReadStream('sales_data.txt')
-    }); 
-
-    file.on('line', (line) => {
-        console.log(line.split(","));
-    });
-
-    return file;
-}
-
-file = readData();
+fs.createReadStream("sales_data.txt")
+.pipe(parse({ delimiter: ",", from_line: 2 }))
+.on("data", function (row) {
+    console.log(row);
+})
+.on("error", function (error) {
+    console.log(error.message);
+})
+.on("end", function () {
+    console.log("finished");
+});
 
 
