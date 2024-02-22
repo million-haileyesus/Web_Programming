@@ -1,26 +1,32 @@
 const fs = require('fs'); 
-const split = require("split");
+const readline = require('readline');
 // const csv = require("csv-parse");  
-let data = []
 
 function readData(file) {
-    let salesFile = fs.createReadStream(file, "utf-8");
+    let salesFile = readline.createInterface({ 
+        input: fs.createReadStream('sales_data.txt')
+    }); 
+
     return salesFile;
 }
 
 function parseData(file) {
+    let data = []
     let salesFileData = readData(file);
+    
+    salesFileData.on('line', (line) => {
+        data.push(line.split(","));
+    });
+    
+    salesFileData.on('close', () => {
+        callback(data);
+    });
 
-    salesFileData.pipe(split())
-        .on('data', function (row) {
-            let columns = row.split(',');
-            data.push(columns);
-        })
+    return data;
 }
 
 function dataAggregation(file) {
-    parseData(file);
-    let parseSalesFile = data;
+    let parseSalesFile = parseData(file);
     const aggregation = {};
 
     parseSalesFile.forEach(function (columns) {
