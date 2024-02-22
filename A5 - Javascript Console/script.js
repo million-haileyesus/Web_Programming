@@ -1,16 +1,48 @@
 const fs = require('fs'); 
-const { parse } = require("csv-parse");  
+const csv = require("csv-parse");  
 
-fs.createReadStream("sales_data.txt")
-.pipe(parse({ delimiter: ",", from_line: 2 }))
-.on("data", function (row) {
-    console.log(row);
-})
-.on("error", function (error) {
-    console.log(error.message);
-})
-.on("end", function () {
-    console.log("finished");
-});
+function readData(file) {
+    let salesFile = fs.createReadStream(file);
+    return salesFile;
+}
+
+function parseData(file) {
+    let salesFileData = readData(file);
+    let rows = salesFileData.split('\n'); 
+    let data = [];
+    
+    rows.forEach(function (row) {
+        let columns = row.split(',');
+        data.push(columns);
+    });
+
+    return data;
+}
+
+function dataAggregation(file) {
+    let parseSalesFile = parseData(file);
+    const aggregation = {};
+
+    parseSalesFile.forEach(function (columns) {
+        let productName = columns[0];
+        let quantity = parseInt(columns[2], 10);
+        let saleAmount = parseFloat(columns[4]);
+
+        if (!aggregation[productName]) {
+            aggregation[productName] = {
+                totalQuantity: quantity,
+                totalSalesAmount: saleAmount
+            };
+        } 
+        else {
+            aggregation[productName].totalQuantity += quantity;
+            aggregation[productName].totalSalesAmount += saleAmount;
+        }
+    });
+
+    console.log(aggregation);
+}
 
 
+const file = "sales_data.txt"
+dataAggregation(file);
