@@ -105,7 +105,7 @@ body {
     border: 2px solid lightgray;
     padding: 5px;
     max-width: 100%;
-    width: auto;
+    width: 350px;
 }
 
 button:hover {
@@ -131,19 +131,21 @@ hr {
     opacity: 0.7;
     position: fixed;
     color: white;
-    width: 100%;
+    width: 100%; 
+    left: 0;     
+    right: 0;
 }
 
-#parent > .flex-container > #personal_profile {
-    font-size: 1.5rem;
+#parent > .flex-container > span {
+    font-size: 24px;
     margin-right: auto;
     font-weight: bold;
 }
 
-#parent > .flex-container > *:nth-of-type(n+2):nth-of-type(-n+7) {
+#parent > .flex-container > a {
     padding: 6px;
     margin: 8px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 
@@ -202,7 +204,7 @@ hr {
 
 .contact-container {
     max-width: 100%;
-    height: max-content;
+    height: fit-content;
     margin: auto;
     padding: 5%;
     background: rgb(119, 137, 138);
@@ -217,6 +219,10 @@ hr {
 
 #form {
     width: 70%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 #copyright {
@@ -229,21 +235,16 @@ hr {
         flex-wrap: wrap;
     }
 
-    #parent > .flex-container {
-        flex-direction: column;
-        flex-wrap: wrap;
+    #parent > .flex-container > span {
+        font-size: 0.8em;
     }
 
-    #parent > div, #parent > span {
-        flex: 1 1 45%;
+    #parent > .flex-container > a {
+        font-size: 0.5em;
     }
 
-    #parent > div {
-        order: -1;
-    }
-
-    table > *{
-        width: auto;
+    table > * {
+        width: auto; 
         height: auto;
     }
 }
@@ -251,9 +252,34 @@ hr {
 @media (max-width: 660px) {
     .content-container, .contact-container {
         max-width: 100%;
+        height: fit-content;
+        margin: auto;
         font-size: 100%;
         margin: auto;
         display: block;
         width: 100%;
+        left: 0;
+        right: 0;
+        overflow: auto;
+    }
+
+    #intro {
+        width: auto;
+        height: auto;
+        background-position: center;
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #parent > .flex-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: start;
+        width: fit-content;
     }
 }
