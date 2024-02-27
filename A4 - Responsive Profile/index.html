@@ -31,12 +31,12 @@
     <div id="parent">
         <div class="flex-container">
             <span id="personal_profile">PERSONAL PROFILE</span>
-            <span onclick="scrollToSection('intro')">INTRODUCTION</span>
-            <span onclick="scrollToSection('personal_info')">ABOUT ME</span>
-            <span onclick="scrollToSection('h&i')">HOBBIES</span>
-            <span onclick="scrollToSection('edu_background')">BACKGROUND</span>
-            <span onclick="scrollToSection('skills&exper')">EXPERTISE</span>
-            <span onclick="scrollToSection('contact_info')">CONTACT</span>
+            <a href="#intro">INTRODUCTION</a>
+            <a href="#personal_info">ABOUT ME</a>
+            <a href="#h&i">HOBBIES</a>
+            <a href="#edu_background">BACKGROUND</a>
+            <a href="#skills&exper">EXPERTISE</a>
+            <a href="#contact_info">CONTACT</a>
         </div>
     </div>
     
@@ -51,7 +51,7 @@
     <div class="content-container">
         <div id="personal_info">
             <h2>Personal Information:</h2>
-            <p id="personal_information">I was born in Feburary 12, 2001 in Mekelle, Ethiopia. I have lived at my birthplace for 12 years<br/>
+            <p id="personal_information">I was born in Feburary 12, 2001 in Mekelle, Ethiopia. I have lived at my birthplace for 12 years 
                         before moving to the captial and came to the United States two and a half years ago.
             </p>
     
@@ -233,13 +233,6 @@
                 behavior: "smooth"
             })
         });
-
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
     </script>
 </body>
 </html>
