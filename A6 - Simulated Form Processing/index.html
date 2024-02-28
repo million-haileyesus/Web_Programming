@@ -7,8 +7,8 @@
     Autor: Million Haileyesus
     School: Rowan University
     Course: Web Programming CS04305
-    Assignment: A4 - Responsive Profile
-    Due Date: 02/14/2024
+    Assignment: A
+    Due Date: 
     Instructor: Professor Marquise Pullen
 
     Description:  Improve the layout and design of your existing 
@@ -25,6 +25,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Personal Profile</title>
 </head>
 <body>
@@ -183,27 +184,27 @@
             <p>Email: hailey74@students.rowan.edu</p>
             <p>Location: Rowan University</p>
             <p>Social: <div><a id="github" href="https://github.com/million-haileyesus" target="_blank">Github</a></div>
-                        <div><a id="linkedin" href="https://www.linkedin.com/in/million-haileyesus" target="_blank">LinkedIn</a></div>
+                       <div><a id="linkedin" href="https://www.linkedin.com/in/million-haileyesus" target="_blank">LinkedIn</a></div>
             </p>
         </div>
     
         <div id="form">
             <h2>Contact Form</h2>
-            <fieldset id="contact_form">
-                <legend>Contact Information</legend>
-                <form>
-                    <div><label>Name: <input type="text" pattern="[A-Za-z]+" placeholder="Name" required></label></div>
-                    <div><label>Email: <input type="email" placeholder="Email" required></label></div>
+            <form id="c-form">
+                <fieldset id="contact_form">
+                    <legend>Contact Information</legend>
+                    <div><label>Name: <input id="name" type="text" pattern="[A-Za-z]+" placeholder="Name" required></label></div>
+                    <div><label>Email: <input id="email" type="email" placeholder="Email" required></label></div>
                     <div>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                     </div>   
                     <div id="send">                                    
-                        <button type="submit">Send</button>
-                    </div>    
-                </form>
-            </fieldset>
-        </div>            
+                        <button type="submit" class="submit">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>           
 
         <button class="go_to_top">
             <img src="https://img.icons8.com/ios/100/circled-up-2.png" alt="circled-up-2"/>
@@ -213,26 +214,5 @@
     <section id="copyright">
         <p>Copyright © 2001-2024 Personal portfolio. All Rights Reserved.</p>
     </section>
-
-    <script>
-        const goToTop = document.querySelector('.go_to_top');
-        window.addEventListener('scroll', checkHeight);      
-        
-        function checkHeight() {
-            if(window.screenY < 100) {
-                goToTop.style.display = "flex"
-            }
-            else {
-                goToTop.style.display = "none"
-            }
-        }
-
-        goToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0, 
-                behavior: "smooth"
-            })
-        });
-    </script>
 </body>
 </html>
