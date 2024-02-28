@@ -19,16 +19,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const form = document.getElementById("c-form");
-    const name = document.getElementById("name");
+    const name = document.getElementById("f-name");
     const email = document.getElementById("email");
     const message = document.getElementById("message"); 
 
     function sendEmail() {
         const promptMessage = `Thank you, ${name.value}, for your email. I will reply to ${email.value} as soon as I can.`;
-        alert(promptMessage);
+        const customPopup = document.getElementById("custom-popup");
+        customPopup.innerHTML = promptMessage;
+        customPopup.style.display = "block";
+
+        setTimeout(() => {
+            customPopup.style.display = "none";
+        }, 5000);
     }
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault();    
         sendEmail();
     });
