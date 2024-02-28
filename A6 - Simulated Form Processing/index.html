@@ -193,7 +193,7 @@
             <form id="c-form">
                 <fieldset id="contact_form">
                     <legend>Contact Information</legend>
-                    <div><label>Name: <input id="name" type="text" pattern="[A-Za-z]+" placeholder="Name" required></label></div>
+                    <div><label>Name: <input id="f-name" type="text" pattern="[^0-9]+" placeholder="Name" required></label></div>
                     <div><label>Email: <input id="email" type="email" placeholder="Email" required></label></div>
                     <div>
                         <label for="message">Message:</label>
@@ -204,6 +204,9 @@
                     </div>
                 </fieldset>
             </form>
+            <div id="custom-popup">
+                
+            </div>
         </div>           
 
         <button class="go_to_top">
