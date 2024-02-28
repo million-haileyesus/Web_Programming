@@ -17,19 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         });
     });
+
+    const form = document.getElementById("c-form");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message"); 
+
+    function sendEmail() {
+        const promptMessage = `Thank you, ${name.value}, for your email. I will reply to ${email.value} as soon as I can.`;
+        alert(promptMessage);
+    }
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();    
+        sendEmail();
+    });
 });
 
-const form = document.getElementById("c-form");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message"); 
 
-function sendEmail() {
-    const promptMessage = `Thank you, ${name.value}, for your email. I will reply to ${email.value} as soon as I can.`;
-    alert(promptMessage);
-}
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    sendEmail();
-});
+
