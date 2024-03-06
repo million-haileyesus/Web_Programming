@@ -1,5 +1,5 @@
 html {
-    background-image: linear-gradient(#c6dbdb, #c7bdb5);
+    background-image: linear-gradient(#cddede, #cac6c2);
 }
 
 h1, h2, h3 {
@@ -128,8 +128,8 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: grey;
-    opacity: 0.7;
+    background-color: #565b61;
+    opacity: 0.9;
     position: fixed;
     color: white;
     width: 100%; 
@@ -149,6 +149,84 @@ hr {
     font-size: 16px;
 }
 
+#weather-container {
+    display: flex;
+    align-items: center;
+    background-color: #9db7d1;
+    height: 70px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#weather-button {
+    justify-content: center;
+    align-items: center;
+    background: #520806;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+#weather-button:hover, #weather-button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #1a0302;
+}
+
+#weather-button:active {
+  opacity: .8;
+}
+
+#num-container {
+    display: flex;
+    align-items: center;
+    background-color: #d1bc9d;
+    height: 70px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.num-button {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .num-button:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
 
 .go_to_top {
     position: fixed;
