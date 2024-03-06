@@ -7,20 +7,18 @@
     Autor: Million Haileyesus
     School: Rowan University
     Course: Web Programming CS04305
-    Assignment: A6 - Simulated Form Processing
-    Due Date: 02/28/2024
+    Assignment: A7 - Promise
+    Due Date: 03/06/2024
     Instructor: Professor Marquise Pullen
 
-    Description: Modify your A4 by adding javascript to perform 
-    client-side validation and process the form upon submission. 
-    Form processing is usually a task for your server, in this 
-    assignment we'll only simulate form processing via client-side 
-    javascript.  
+    Description: Modify your A6 by integrating API for fetching 
+    real-time data.    
 
     Honor Pledge: I pledge that this work is entirely my own
 
-    My sourcew are from our lecture slide and a youtube tutorial for 
-    the go to top button.
+    My source are from our lecture slide and a youtube tutorial 
+    for the go to top button and other google source for getting
+    the date and random numbers.
 -->
 
 <!DOCTYPE html>
@@ -52,6 +50,16 @@
     </div>
     
     </br>
+
+    <div id="weather-container">
+        <button id="weather-button" type="submit" class="submit">Get weather</button>
+        <p class="temperature"></p>
+    </div>
+
+    <div id="num-container">
+        <button class="num-button" role="button">Get number facts</button>
+        <p class="num"></p>
+    </div>
 
     <div class="content-container">
         <div id="personal_info">
