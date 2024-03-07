@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return Math.floor(Math.random() * max);
     }
     
-    async function fetchWeather() {
+    async function fetchNumberFact() {
         num = getRandomInt(101);
         const url = `http://numbersapi.com/${num}/math?callback=showNumber`;
         try {
@@ -96,6 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     
-    numButton.addEventListener("click", fetchWeather);
+    numButton.addEventListener("click", fetchNumberFact);
 });
 
