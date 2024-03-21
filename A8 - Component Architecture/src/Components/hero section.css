@@ -1,0 +1,57 @@
+html {
+    background-image: linear-gradient(#cddede, #cac6c2);
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+    color: #003366;
+    line-height: 1.25;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+body {
+    font-size: 1.4rem;
+    max-width: 100%;
+}
+
+a {
+    color: blue;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #565b61;
+    opacity: 0.9;
+    position: fixed;
+    color: white;
+    width: 100%; 
+    left: 0;     
+    right: 0;
+}
+
+#parent > .flex-container > span {
+    font-size: 24px;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#parent > .flex-container > a {
+    padding: 6px;
+    margin: 8px;
+    font-size: 16px;
+}
